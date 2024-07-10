@@ -1,0 +1,461 @@
+@charset "UTF-8";
+
+    /*define la fuente que usaremos*/
+@font-face {
+    font-family: TrajanProRegular; /* define una fuente */ 
+    src: url('../fonts/TrajanProRegular.ttf'); /* Ruta de la fuente personalizada */
+}
+    /*se cambia el formato de los links*/
+a:link {
+    text-decoration: none; /* Elimina la subraya de los enlaces no visitados */
+}
+    /*define la fuente para toda la pagina*/
+*{
+    font-family: 'TrajanProRegular'; /* Establece la fuente para todas las etiquetas */
+    color: white; /* Define el color del texto para todas las etiquetas */
+}
+    /* Fondo del cuerpo del sitio */
+.index{           
+	background-color:#020f1c;                    
+	background-image: url('../imagenes/dirtmouth.jpg');
+	background-size: cover;
+    background-repeat: no-repeat; /* repite la imagen solo en horizontal */
+}
+    /* Fondo del cuerpo del sitio */
+.historia{                   
+	background-color:#020f1c;                    
+	background-image: url('../imagenes/BrettasHouse.jpg');
+	background-size: cover;
+    background-repeat: no-repeat; /* repite la imagen solo en horizontal */
+}
+    /* Fondo del cuerpo del sitio */
+.ubicacion{
+    background-color:#020f1c; /* Fondo oscuro */                    
+	background-image: url('../imagenes/dream.png'); /*imagen que se usara de fondo*/
+	background-size: cover;
+    background-repeat: no-repeat; /* repite la imagen solo en horizontal */
+}
+    /* Fondo del cuerpo del sitio */
+.personajes{
+    background-color:#020f1c;  /* Fondo oscuro */                   
+	background-image: url('../imagenes/TiendaMapas.png');
+	background-size: cover;
+    background-repeat: no-repeat; /* repite la imagen solo en horizontal */
+}
+    /* Fondo del cuerpo del sitio */
+.actividades{
+    background-color:#020f1c;   /* Fondo oscuro */                  
+	background-image: url('../imagenes/circo.jpg'); 
+	background-size: cover;
+    background-repeat: no-repeat; /* repite la imagen solo en horizontal */
+}
+    /* Fondo del cuerpo del sitio */
+.referencias{
+    background-color:#020f1c;   /* Fondo oscuro */                  
+	background-image: url('../imagenes/SiervoVias.jpg'); /*imagen que se usara de fondo*/
+	background-size: cover;
+    background-repeat: no-repeat; /* repite la imagen solo en horizontal */
+}
+    /*formato del contenido Principal*/
+.contenido{
+    text-align: center; /* Centra el texto horizontalmente */
+    font-size: 28px;
+    padding: 10px; /* Espaciado interior */
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5); /*desenfoque de la sombra*/
+}
+    /*define el formato del menu*/
+.menu{
+    text-align: center; /* Centra el texto horizontalmente */
+    background-color: #071233 ; /* Color de fondo */
+    width: 99%;
+    height: 35px;
+    padding: 10px; /* Espaciado interior */
+}
+    /*define el formato de los botones*/
+.botones{
+    transition: all .5s ease-out; 
+    top: 100px;
+    color: white; /* Color del texto */
+    font-size: 25px; /* Tamaño de fuente */
+    padding: 10px 20px; 
+    margin: 15px;
+    ;
+}
+    /* texto suptema*/
+.subTema{
+    font-size: 30px; /* Ajusta el tamaño del texto según tu preferencia */
+    text-align: center;
+    margin: 20px 0; 
+}
+    /* define lo ajustes para la imagen del mapa*/
+.mapa_image {
+    margin-left: 13%; /*ajusta el marge*/
+}
+    /* Contenedor principal */
+.contenedor{
+    text-align: center; /* Ajustar el texto */
+}
+    /*define los margenes*/
+.margen {
+    width: 150px; /* Ajusta el tamaño de las imágenes según tu preferencia */
+    display: block;
+    margin: 0 auto; /* Centrar horizontalmente las imágenes */
+}
+
+    /*define el formato del texto*/
+.texto {
+    font-size: 24px; /* Ajusta el tamaño del texto según tu preferencia */
+    text-align: center;
+    margin-left: 230px ;
+    margin-right: 230px;
+    margin-top:  20px auto;
+    margin-bottom:  20px auto; /* Espacio vertical entre el texto y las imágenes, y centrar horizontalmente */
+}
+    /*crea un cuadro sombrado para resaltar el texto*/
+.texto-con-sombra {
+    display: inline-block;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Establece la sombra */
+    padding: 20px; /* Ajusta el espaciado entre el texto y el cuadro de sombra */
+    background-color: rgba(0, 0, 0, 0.8); /* Color de fondo del cuadro de sombra con opacidad */
+}
+    /* define lo ajustes para la imagenes de retrato*/
+.imagen-pequena {
+    width: 100px; /* Ajusta el tamaño de la imagen pequeña según tu preferencia */
+    float: left; /* Hace que la imagen flote a la izquierda del texto */
+    margin-right: 20px; /* Añade margen a la derecha de la imagen para separarla del texto */
+}
+    /* define lo ajustes para la imagenes de medianas*/
+.imagen-mediana {
+    width: 600px; /* Ajusta el tamaño de la imagen pequeña según tu preferencia */
+    align-items: center;/* Hace que la imagen flote a la izquierda del texto */
+}
+    /* Contenedor descripcion */
+.contenedor_descripcion{
+    text-align: left; /* Aliniamos el contenido a la izquierda */
+    padding: 20px; /* Añadimos espacio alrededor del contenido */
+}
+    /* texto descripcion */
+.texto_descripcion{
+    font-size: 18px; /* Ajusta el tamaño del texto según tu preferencia */
+    text-align: left; /* Aliniamos el texto a la izquierda */
+}
+    /* formato submenu */
+.subMenu{
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 100;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid #ddd; /* Línea divisoria bajo el menú */
+}
+
+@media (max-width: 800px) {
+/* Fondo del cuerpo del sitio */
+.index {
+    background-color: #020f1c;
+    background-image: url('../imagenes/dirtmouth.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Fondo del cuerpo del sitio */
+.historia {
+    background-color: #020f1c;
+    background-image: url('../imagenes/BrettasHouse.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Fondo del cuerpo del sitio */
+.ubicacion {
+    background-color: #020f1c;
+    background-image: url('../imagenes/dream.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Fondo del cuerpo del sitio */
+.personajes {
+    background-color: #020f1c;
+    background-image: url('../imagenes/TiendaMapas.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Fondo del cuerpo del sitio */
+.actividades {
+    background-color: #020f1c;
+    background-image: url('../imagenes/circo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Fondo del cuerpo del sitio */
+.referencias {
+    background-color: #020f1c;
+    background-image: url('../imagenes/SiervoVias.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* formato del contenido Principal */
+.contenido {
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* define el formato del menu */
+.menu {
+    text-align: center;
+    background-color: #071233;
+    width: 99%;
+    height: 35px;
+    padding: 10px;
+}
+
+/* define el formato de los botones */
+.botones {
+    transition: all .5s ease-out;
+    top: 100px;
+    color: white;
+    font-size: 25px;
+    padding: 10px 20px;
+    margin: 15px;
+}
+
+/* texto subtema */
+.subTema {
+    font-size: 30px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* define lo ajustes para la imagen del mapa */
+.mapa_image {
+    margin-left: 13%;
+}
+
+/* Contenedor principal */
+.contenedor {
+    text-align: center;
+}
+
+/* define los margenes */
+.margen {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* define el formato del texto */
+.texto {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+/* crea un cuadro sombrado para resaltar el texto */
+.texto-con-sombra {
+    display: inline-block;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* define lo ajustes para la imagenes de retrato */
+.imagen-pequena {
+    width: 100px;
+    float: left;
+    margin-right: 20px;
+}
+
+/* define lo ajustes para la imagenes de medianas */
+.imagen-mediana {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Contenedor descripcion */
+.contenedor_descripcion {
+    text-align: left;
+    padding: 20px;
+}
+
+/* texto descripcion */
+.texto_descripcion {
+    font-size: 18px;
+    text-align: left;
+}
+
+/* formato submenu */
+.subMenu {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 100;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+    
+}
+
+/* Estilos para tableta o portátil sencillo (800px - 1200px) */
+@media (min-width: 800px) and (max-width: 1200px) {
+    .texto {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+}
+
+/* Estilos para pantallas de escritorio (>1200px) */
+@media (min-width: 1200px) {
+    a:link {
+        text-decoration: none; /* Elimina la subraya de los enlaces no visitados */
+    }
+        /*define la fuente para toda la pagina*/
+    *{
+        font-family: 'TrajanProRegular'; /* Establece la fuente para todas las etiquetas */
+        color: white; /* Define el color del texto para todas las etiquetas */
+    }
+        /* Fondo del cuerpo del sitio */
+    .index{           
+        background-color:#020f1c;                    
+        background-image: url('../imagenes/dirtmouth.jpg');
+        background-size: cover;
+        background-repeat: no-repeat; /* repite la imagen solo en horizontal */
+    }
+        /* Fondo del cuerpo del sitio */
+    .historia{                   
+        background-color:#020f1c;                    
+        background-image: url('../imagenes/BrettasHouse.jpg');
+        background-size: cover;
+        background-repeat: no-repeat; /* repite la imagen solo en horizontal */
+    }
+        /* Fondo del cuerpo del sitio */
+    .ubicacion{
+        background-color:#020f1c; /* Fondo oscuro */                    
+        background-image: url('../imagenes/dream.png'); /*imagen que se usara de fondo*/
+        background-size: cover;
+        background-repeat: no-repeat; /* repite la imagen solo en horizontal */
+    }
+        /* Fondo del cuerpo del sitio */
+    .personajes{
+        background-color:#020f1c;  /* Fondo oscuro */                   
+        background-image: url('../imagenes/TiendaMapas.png');
+        background-size: cover;
+        background-repeat: no-repeat; /* repite la imagen solo en horizontal */
+    }
+        /* Fondo del cuerpo del sitio */
+    .actividades{
+        background-color:#020f1c;   /* Fondo oscuro */                  
+        background-image: url('../imagenes/circo.jpg'); 
+        background-size: cover;
+        background-repeat: no-repeat; /* repite la imagen solo en horizontal */
+    }
+        /* Fondo del cuerpo del sitio */
+    .referencias{
+        background-color:#020f1c;   /* Fondo oscuro */                  
+        background-image: url('../imagenes/SiervoVias.jpg'); /*imagen que se usara de fondo*/
+        background-size: cover;
+        background-repeat: no-repeat; /* repite la imagen solo en horizontal */
+    }
+        /*formato del contenido Principal*/
+    .contenido{
+        text-align: center; /* Centra el texto horizontalmente */
+        font-size: 28px;
+        padding: 10px; /* Espaciado interior */
+        text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5); /*desenfoque de la sombra*/
+    }
+        /*define el formato del menu*/
+    .menu{
+        text-align: center; /* Centra el texto horizontalmente */
+        background-color: #071233 ; /* Color de fondo */
+        width: 99%;
+        height: 35px;
+        padding: 10px; /* Espaciado interior */
+    }
+        /*define el formato de los botones*/
+    .botones{
+        transition: all .5s ease-out; 
+        top: 100px;
+        color: white; /* Color del texto */
+        font-size: 25px; /* Tamaño de fuente */
+        padding: 10px 20px; 
+        margin: 15px;
+        ;
+    }
+        /* texto suptema*/
+    .subTema{
+        font-size: 30px; /* Ajusta el tamaño del texto según tu preferencia */
+        text-align: center;
+        margin: 20px 0; 
+    }
+        /* define lo ajustes para la imagen del mapa*/
+    .mapa_image {
+        margin-left: 13%; /*ajusta el marge*/
+    }
+        /* Contenedor principal */
+    .contenedor{
+        text-align: center; /* Ajustar el texto */
+    }
+        /*define los margenes*/
+    .margen {
+        width: 150px; /* Ajusta el tamaño de las imágenes según tu preferencia */
+        display: block;
+        margin: 0 auto; /* Centrar horizontalmente las imágenes */
+    }
+    
+        /*define el formato del texto*/
+    .texto {
+        font-size: 24px; /* Ajusta el tamaño del texto según tu preferencia */
+        text-align: center;
+        margin-left: 230px ;
+        margin-right: 230px;
+        margin-top:  20px auto;
+        margin-bottom:  20px auto; /* Espacio vertical entre el texto y las imágenes, y centrar horizontalmente */
+    }
+        /*crea un cuadro sombrado para resaltar el texto*/
+    .texto-con-sombra {
+        display: inline-block;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Establece la sombra */
+        padding: 20px; /* Ajusta el espaciado entre el texto y el cuadro de sombra */
+        background-color: rgba(0, 0, 0, 0.8); /* Color de fondo del cuadro de sombra con opacidad */
+    }
+        /* define lo ajustes para la imagenes de retrato*/
+    .imagen-pequena {
+        width: 100px; /* Ajusta el tamaño de la imagen pequeña según tu preferencia */
+        float: left; /* Hace que la imagen flote a la izquierda del texto */
+        margin-right: 20px; /* Añade margen a la derecha de la imagen para separarla del texto */
+    }
+        /* define lo ajustes para la imagenes de medianas*/
+    .imagen-mediana {
+        width: 600px; /* Ajusta el tamaño de la imagen pequeña según tu preferencia */
+        align-items: center;/* Hace que la imagen flote a la izquierda del texto */
+    }
+        /* Contenedor descripcion */
+    .contenedor_descripcion{
+        text-align: left; /* Aliniamos el contenido a la izquierda */
+        padding: 20px; /* Añadimos espacio alrededor del contenido */
+    }
+        /* texto descripcion */
+    .texto_descripcion{
+        font-size: 18px; /* Ajusta el tamaño del texto según tu preferencia */
+        text-align: left; /* Aliniamos el texto a la izquierda */
+    }
+        /* formato submenu */
+    .subMenu{
+        position: sticky;
+        top: 0;
+        background-color: #fff;
+        z-index: 100;
+        padding: 10px 0;
+        text-align: center;
+        border-bottom: 1px solid #ddd; /* Línea divisoria bajo el menú */
+    }
+    
+    /* Agrega tus estilos específicos para pantallas de escritorio aquí */
+}
